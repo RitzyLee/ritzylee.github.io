@@ -1,0 +1,124 @@
+* {
+  box-shadow: border-box;
+}
+html {
+  background: url('../img/bckgrnd.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+body {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+.nav-main {
+  flex-flow: wrap;
+  overflow:auto;
+  position:fixed;
+  top: 0px;
+  z-index: 100;
+}
+.nav-main ul a:hover {
+  background-color: rgba(150, 145, 145, 1);
+}
+.nav-main ul{
+  list-style: none;
+}
+.nav-main ul li {
+  float: left;
+  width: 200px;
+  height: 20;
+  background-color: rgba(152, 188, 187, 1);
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 2PX;
+}
+.nav-main li a {
+  color: White;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  transition: all .2s;
+}
+.nav-main li a:hover {
+  color: rgba(152, 188, 187, 1);
+}
+.nav-main ul li ul li {
+  display: none;
+}
+.nav-main ul li:hover ul li {
+  display: block;
+}
+
+/*About-Me css*/
+section{
+  padding: 20px;
+  margin: 10px;
+}
+section.me {
+  position: fixed; left:auto;
+  left: 30px;
+  top:100px;
+  border: double 3px gray;
+  padding: 0px;
+
+
+}
+section.amPage p {
+  position: relative; top: 100px;
+	position: relative; left: 390px;
+	width: 70%;
+  color: White;
+  background-color: rgba(72, 67, 73, 1);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 6px dotted rgba(152, 188, 187, 1);
+}
+section p.Welcome {
+  border-style: double;
+  text-align: center;
+  background-color: none;
+  font-size: 40px;
+  font-family: 'Lobster',cursive;
+}
+
+/*Gallery css*/
+body.Gallery {
+  background-color: black;
+}
+p.Gallery {
+  position: relative; top: 100px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lobster',cursive;
+}
+.row {
+  position: relative; top: 100px;
+  clear: both;
+}
+
+/*imag container*/
+p.img-cont img {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+@media all and (min-width: 480px) {
+.col{
+    float:left;
+}
+.col-1-of-4 {
+    width: 25%;
+}
+.col-2-of-4 {
+    width: 50%
+}
+.col-3-of-4{
+    width: 75%;
+}
+.col-1-of-4 {
+  width: 25%;
+}
+}
