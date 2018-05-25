@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Graphic Design</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster" rel="stylesheet">
+  </head>
+  <body class="gd-page">
+    <nav class="nav-main">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="../index.html">About</a></li>
+        <li><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Illustrations</a></li>
+            </ul>
+        </li>
+        <li><a href="../My-Account/index.html">My Account</a></li>
+        <li><a href="../Gallery/index.html">Gallery</a></li>
+      </ul>
+    </nav>
+      <section class="gd-page">
+          <p class="title">Purchase an Item</p>
+        <div class="gd-purchase">
+          <h2>Quantity:   <input type="text" id="num1">
+          </h2>
+        </div>
+        <div class="gd-purchase">
+          <h2>Cost of 1 Item:   <input type="text" id="num2"></h2>
+        </div>
+        <div class="gd-purchase">
+          <p id="total"></p>
+            <button id="Multiply-Numbers" onclick="multNums()">Click for Total Cost</button>
+        </div>
+        <div class="gd-purchase">
+          <p>
+            <h1 id="Thank You!"></h1>
+          </p>
+        </div>
+      </section>
+      <ul id="js-loop">
+      </ul>
+      </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/main.js" charset="utf-8"></script>
+  </body>
+</html>
