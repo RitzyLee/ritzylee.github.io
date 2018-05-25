@@ -1,3 +1,4 @@
+/*NAV and body*/
 * {
   box-shadow: border-box;
 }
@@ -60,8 +61,6 @@ section.me {
   top:100px;
   border: double 3px gray;
   padding: 0px;
-
-
 }
 section.amPage p {
   position: relative; top: 100px;
@@ -75,14 +74,13 @@ section.amPage p {
   padding: 20px;
   border: 6px dotted rgba(152, 188, 187, 1);
 }
-section p.Welcome {
+section p.title {
   border-style: double;
   text-align: center;
   background-color: none;
   font-size: 40px;
   font-family: 'Lobster',cursive;
 }
-
 /*Gallery css*/
 body.Gallery {
   background-color: black;
@@ -98,27 +96,54 @@ p.Gallery {
   position: relative; top: 100px;
   clear: both;
 }
-
 /*imag container*/
 p.img-cont img {
   display: block;
   width: 100%;
   margin: 20px auto;
 }
+/*My Account css*/
+.ma-Body {
+  position: relative; top: 100px;
+  color: white;
+  text-align: center;
+}
+#create_customer input{
+  width: 100%;
+}
+h1 {
+  font-size: 40px;
+  padding: 40px;
+  font-family: 'Lobster',cursive;
+}
+
+/*gd page css*/
+.gd-page{
+  position: relative; top: 100px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.gd-purchase {
+  padding: 10px;
+}
+#total {
+  color: white;
+}
 @media all and (min-width: 480px) {
-.col{
-    float:left;
-}
-.col-1-of-4 {
+  .col{
+      float:left;
+  }
+  .col-1-of-4 {
+      width: 25%;
+  }
+  .col-2-of-4 {
+      width: 50%
+  }
+  .col-3-of-4{
+      width: 75%;
+  }
+  .col-1-of-4 {
     width: 25%;
-}
-.col-2-of-4 {
-    width: 50%
-}
-.col-3-of-4{
-    width: 75%;
-}
-.col-1-of-4 {
-  width: 25%;
-}
+  }
 }
